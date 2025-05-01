@@ -575,9 +575,10 @@ class Polynomial:
         coeffs_dict = {}
         
         # Regular expression patterns to match different types of terms
-        const_pattern = r'^(-?\d*\.?\d*)
-        linear_pattern = r'^(-?\d*\.?\d*)x
-        power_pattern = r'^(-?\d*\.?\d*)x\^(\d+)
+        const_pattern = r'^(-?\d*\.?\d*)$'
+        linear_pattern = r'^(-?\d*\.?\d*)x$'
+        power_pattern = r'^(-?\d*\.?\d*)x\^(\d+)$'
+
         
         for term in terms:
             if not term:  # Skip empty terms
